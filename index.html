@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let so = prompt('nhap so can kiem tra')
+isPrime(so)
+function isPrime() {
+    let dem = 0;
+    let isPrime = false;
+    if(so == 0){
+        alert('0 khong phai so nguyen to')
+    }else {
+        for (i = 1 ; i <= so ; i++){
+            if ( so % i == 0){
+                dem++
+            }
+        }if (dem == 2){
+            isPrime = true;
+        }
+        if (isPrime){
+            alert(so + ' la so nguyen to')
+        }else {
+            alert(so + ' khong phai so nguyen to')
+        }
+0    }
+}
+
+</script>
+</body>
+</html>
